@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Software Company :: Products</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>
+			<a href="index.html">Software Company</a>
+		</h1>
+	</header>
+
+	<div id="split">
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="services.html" >Products</a>
+			<a href="order.html" >Order Form</a>
+		</nav>
+		<main>
+			<h1>Order Form</h1>
+			<form method="post" action="https://webdevbasics.net/scripts/demo.php">
+
+				<input type="checkbox" name="word" id="word">
+				<label for="word">word processing Application</label>
+				<br>
+				<input type="checkbox" name="sheet" id="sheet">
+				<label for="sheet">Spread Sheet Application</label>
+				<br>
+				<input type="checkbox" name="present" id="present">
+				<label for="present">Presentation Application</label>
+				<br>
+				<input type="checkbox" name="package" id="package">
+				<label for="package">Professional Package</label>
+				<br>
+				<input type="checkbox" name="data" id="data">
+				<label for="data">Database application</label>
+				<br>
+				<input type="checkbox" name="note" id="note">
+				<label for="note">Note Application</label>
+				<fieldset>
+					<legend>Card details</legend>
+					<label for="cardName">Name on Card</label>
+					<input type="text" name="cardName" id="cardName" required="required">
+
+					<label for="cardNum">Card Number</label>
+					<input type="text" name="cardNum" id="cardNum" required="required">
+
+					<label for="cardExp">Expiration Date</label>
+					<input type="month" name="cardExp" id="cardExp" required="required">
+
+					<label for="cardId">security code</label>
+					<input type="number" name="cardId" id="cardId" required="required" min="100" max="999">
+				</fieldset>
+				<input type="submit">
+			</form>
+		</main>
+	</div>
+	<footer>
+		
+		Copyright &copy; 2022 Software Company<br>
+		<a href="mailto:tommy.lesueur.temp@outlook.com">tommy.lesueur.temp@outlook.com</a>
+		
+	</footer>
+</body>
+</html>
